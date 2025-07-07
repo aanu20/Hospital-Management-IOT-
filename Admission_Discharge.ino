@@ -18,8 +18,8 @@ Preferences preferences;
 #define SS_PIN  5
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-#define MQTT_USERNAME (char *)""
-#define MQTT_PASSWORD (char *)""
+#define MQTT_USERNAME (char *)""  // from zoho iot 
+#define MQTT_PASSWORD (char *)""  //from zoho iot
 
 WiFiClientSecure espClient;
 ZohoIOTClient zClient(&espClient, true);

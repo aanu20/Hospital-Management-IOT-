@@ -11,15 +11,15 @@
 U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0,U8X8_PIN_NONE);
 Preferences preferences;
 
-#define SSID "Redmi"
-#define PASSWORD "barbie@2006"
+#define SSID ""
+#define PASSWORD ""
 
 #define RST_PIN 15
 #define SS_PIN  5
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-#define MQTT_USERNAME (char *)"/22312iumms.zohoiothub.in/v1/devices/3513000000148028/connect"
-#define MQTT_PASSWORD (char *)"f8b455ba5272baee5dbcb131086c477ca5fa8dc836cfc531ecb1b2cb23c316d"
+#define MQTT_USERNAME (char *)""
+#define MQTT_PASSWORD (char *)""
 
 WiFiClientSecure espClient;
 ZohoIOTClient zClient(&espClient, true);
